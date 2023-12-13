@@ -1,0 +1,18 @@
+extends _layout/default
+
+block vars
+  -title        = 'Homepage'
+  -description  = ''
+  -keywords     = ''
+  -og_title     = ''
+  -url          = ''
+  -pageID       = 'homepage'
+  -path         = '.'
+
+block scripts
+
+block container
+  .test
+    h1 this is a heading
+  a.trans(href="#") TEST
+  a.m-block(href="/") test 2

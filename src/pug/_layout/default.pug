@@ -1,0 +1,44 @@
+include ../_mixins/_all
+
+block vars
+  -title        = ''
+  -description  = ''
+  -keywords     = ''
+  -og_title     = ''
+  -url          = ''
+  -pageID       = ''
+  -path         = '.'
+
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='./assets/js/library/fontawesome/css/all.css')
+    link(rel='stylesheet' href='./assets/js/library/fontawesome/fontawesome/fontawesome.css')
+    link(rel='stylesheet' href='./assets/js/library/aos/aos.css')
+    link(rel='stylesheet' href='./assets/js/library/swiper/swiper-bundle.min.css')
+    link(rel='stylesheet' href='./assets/js/library/themify-icons/themify-icons.css')
+    link(rel='stylesheet' href='./assets/js/library/select2/select2.min.css')
+    link(rel='stylesheet' href='./assets/js/library/themifi/themify-icons.css')
+    link(rel='stylesheet' href='./assets/js/library/gallery/lightgallery.min.css')
+    link(rel='stylesheet' href='./assets/js/library/fancybox/fancybox.css')
+    link(rel='stylesheet' href='./assets/css/style.css')
+    link(rel='icon' type='image/png' href='./assets/images/mona.png')
+    title Template
+
+  body(class=pageID)
+    include ../_modules/header
+    main.main
+      block container
+    include ../_modules/footer
+    script(src='./assets/js/library/jquery/jquery.js')
+    script(src='./assets/js/library/swiper/swiper-bundle.min.js')
+    script(src='./assets/js/library/aos/aos.js')
+    script(src='./assets/js/library/select2/select2.min.js')
+    script(src='./assets/js/library/gallery/lightgallery-all.min.js')
+    script(src='./assets/js/library/jquery/jquery-migrate.js')
+    script(src='./assets/js/library/fancybox/fancybox.umd.js')
+    script(src='./assets/js/main.js' type='module')
+    block scripts
